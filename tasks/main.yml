@@ -28,5 +28,5 @@
     dest=/etc/ssmtp/ssmtp.conf
     owner=root
     group=root
-    mode=0640
+    mode=0644
   tags: ssmtp
