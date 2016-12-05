@@ -2,6 +2,6 @@
 # tasks file for ssmtp (Ubuntu specific)
 
 - name: Install sSMTP packages
-  apt: name={{ item }} state=present update_cache=yes
+  apt: name={{ item }} state=present update_cache=yes cache_valid_time=86400
   with_items: "{{ ssmtp_packages }}"
   tags: ssmtp
